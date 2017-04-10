@@ -123,7 +123,7 @@ var Module = angular.module('datePicker', []);
           scope.date = date;
 
           var nextView = scope.views[scope.views.indexOf(scope.view) + 1];
-          if ((!nextView || partial) || scope.model) {
+          if (!nextView) {
             setDate(date);
           }
 
